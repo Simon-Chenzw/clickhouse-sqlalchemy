@@ -9,14 +9,7 @@ apilevel = '2.0'
 threadsafety = 2
 # Python extended format codes, e.g. ...WHERE name=%(name)s
 paramstyle = 'pyformat'
-
-
-class Error(Exception):
-    """
-    Exception that is the base class of all other error exceptions.
-    You can use this to catch all errors with one single except statement.
-    """
-    pass
+Error = Exception
 
 
 def connect(*args, **kwargs):
